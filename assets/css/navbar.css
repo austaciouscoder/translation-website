@@ -153,7 +153,7 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 10px;
 }
-.navbar-services-subsection p {
+.navbar-services-subsection a {
     padding:5px;
 }
 #navbar-languages-section {
@@ -219,13 +219,14 @@ body {
     position:relative;
     margin: 30px auto;
     justify-content: center;
+
 }
 .navbar-locations-subsection {
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
 }
-.navbar-locations-subsection p {
+.navbar-locations-subsection a {
     padding:5px;
 }
 #navbar-about-section {
@@ -291,6 +292,7 @@ body {
     text-align: center;
     justify-content: center;
     z-index:2;
+    width:100%;
 }
 .section-title h2 {
     position:absolute;
@@ -369,7 +371,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        height: 60%;
+        height: 75%;
 
     }
 
@@ -439,6 +441,16 @@ body {
         margin-left: auto;
     }
 
+    .navbar-title {
+        border:1px solid black;
+        width:80%;
+        height:80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border-radius:10px;
+    }
     #navbar-content {
         width: 100%;
         height: 100%;
@@ -458,35 +470,85 @@ body {
     }
 
     .navbar-team-section {
-        padding: 10px 20px;
+        padding: 20px 20px;
+        border-radius:10px;
     }
 
-    .navbar-services-section p {
-        display: none;
-    }
 
-    .navbar-services-section h2 {
-    }
 
+    #navbar-locations-section {
+        grid-template-columns: auto auto;
+        grid-column-gap:10px;
+        grid-row-gap:10px;
+
+        width:90%;
+    }
+    .navbar-locations-section {
+        padding:20px 0;
+        text-align: center;
+        width:100%;
+
+    }
+    .navbar-locations-section a {
+        padding: 7px;
+    }
     #navbar-services-section {
-        grid-row-gap: 40px;
+        grid-template-columns: auto auto;
+        text-align: center;
+        grid-column-gap:0;
+        grid-row-gap:30px;
+
+        width:90%;
+
     }
-
+    .navbar-services-section {
+        text-align: center;
+        width:100%;
+        grid-column-gap:0;
+margin:0;
+        padding:0;
+    }
+    .navbar-services-section h2 {
+        text-align: center;
+        width:100%;
+        grid-column-gap:0;
+        margin:0;
+        padding:0;
+    }
+    .navbar-services-subsection {
+        grid-template-columns: 1fr;
+width:100%;
+        grid-column-gap:0;
+        margin:0;
+        padding:0;
+        grid-row-gap:5px;
+    }
     #navbar-languages-section {
-        grid-template-columns: auto;
-        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
         position: relative;
-
+        width:80%;
+        text-align: center;
     }
 
     .navbar-language-section {
 
         font-size: 40px;
         border: 1px solid black;
+        border-radius:10px;
         position: relative;
-        width: 100%;
-        height: auto;
+        width:100%;
+        height:150px;
+        text-align: center;
+
     }
+    .navbar-language-text {
+    }
+    .navbar-language-image {
+width:auto;
+    height:100%;
+        overflow: hidden;
+    }
+
 
     #navbar-industries-section {
         grid-template-columns: 1fr 1fr;

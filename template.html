@@ -13,14 +13,13 @@
 </head>
 <body>
 <img src="assets/images/entertainment.jpg" id="background-image">
-
 <header id="site-header">
 
 
     <nav id="navbar">
-        <div id="navbar-logo"><div id="navbar-logo-content" href="index.html"><img id="navbar-logo-image" src="assets/images/logo.png">
+        <div id="navbar-logo"><a id="navbar-logo-content" href="template-master.html"><img id="navbar-logo-image" src="assets/images/logo.png">
             <div id="navbar-logo-text">Abacus <br>Translations</div>
-        </div>
+        </a>
             <div id="navbar-menu-open" class="mobile">X</div>
             <div id="navbar-menu-close" class="mobile">Y</div>
             <div id="navbar-sections-close" class="mobile">Z</div>
@@ -28,25 +27,25 @@
         </div>
 
         <div id="navbar-container">
-            <div id="navbar-team" class="navbar">
+            <a id="navbar-team" class="navbar" href="team/index.html">
                 <div id="navbar-team-title" class="navbar-title">Team</div>
 
-            </div>
-            <div id="navbar-services" class="navbar">
+            </a>
+            <a id="navbar-services" class="navbar" href="services/index.html">
                 <div id="navbar-services-title" class="navbar-title">Services</div>
-            </div>
-            <div id="navbar-languages" class="navbar">
+            </a>
+            <a id="navbar-languages" class="navbar" href="language/index.html">
                 <div id="navbar-languages-title" class="navbar-title">Languages</div>
-            </div>
-            <div id="navbar-industries" class="navbar">
+            </a>
+            <a id="navbar-industries" class="navbar" href="industries/index.html">
                 <div id="navbar-industries-title" class="navbar-title">Industries</div>
-            </div>
-            <div id="navbar-locations" class="navbar">
+            </a>
+            <a id="navbar-locations" class="navbar" href="locations/index.html">
                 <div id="navbar-locations-title" class="navbar-title">Locations</div>
-            </div>
-            <div id="navbar-about" class="navbar">
+            </a>
+            <a id="navbar-about" class="navbar" href="company/index.html">
                 <div id="navbar-about-title" class="navbar-title">About</div>
-            </div>
+            </a>
 
             <div id="navbar-language" class="navbar">
                 <div id="navbar-language-title" class="navbar-title">🇺🇸</div>
@@ -55,7 +54,7 @@
         </div>
 
         <div id="navbar-quote">
-            <div id="navbar-quote-title" class="navbar-title">Request A Quote</div>
+            <a href="company/quote.html" id="navbar-quote-title" class="navbar-title">Request A Quote</a>
             <div id="navbar-quote-content" class="navbar-content"></div>
         </div>
         <div id="navbar-languages-mobile">
@@ -70,209 +69,228 @@
 <div id="navbar-content">
     <div id="navbar-team-content" class="navbar-content">
         <div id="navbar-team-section">
-            <div class="navbar-team-section" id="navbar-team-agencies">
+            <a href="team/agencies/index.html" class="navbar-team-section" id="navbar-team-agencies">
                 <img src="assets/images/icons/institution.png" class="navbar-team-images">
                 <h3>Partner Agencies</h3>
 
-            </div>
-            <div class="navbar-team-section" id="navbar-team-translators">
+            </a>
+            <a href="team/interpreters/index.html" class="navbar-team-section" id="navbar-team-translators">
                 <img src="assets/images/icons/person.png" class="navbar-team-images">
 
                 <h3>Translators & Interpreters</h3>
-            </div>
+            </a>
         </div>
-        <div id="navbar-team-link" class="navbar-link">View All</div>
+        <a href="team/index.html" id="navbar-team-link" class="navbar-link">View All</a>
 
     </div>
 
     <div id="navbar-services-content" class="navbar-content">
         <div id="navbar-services-section">
             <div class="navbar-services-section">
-                <h2>Written Translations</h2>
-                <div class="navbar-services-subsection"><p>General Translations</p>
-                    <p>Certified Translations</p>
-                    <p>Specialized Translations</p>
-                    <p>Certificate Translations</p>
-                    <p>Legal Translations</p>
-                    <p>Creative Translations</p>
-                    <p>Short Translations</p></div>
+                <h2 class="desktop"><a href="services/translations/index.html">Written Translations</a></h2>
+                <div class="navbar-services-subsection">
+                    <h2 class="mobile"><a href="services/translations/index.html">Written Translations</a></h2>
+
+                    <a href="services/translations/general.html">General Translations</a>
+                    <a href="services/translations/certified.html">Certified Translations</a>
+                    <a href="services/translations/specialized.html">Specialized Translations</a>
+                    <a href="services/translations/certificate.html" class="desktop">Certificate Translations</a>
+                    <a href="services/translations/legal.html" class="desktop">Legal Translations</a>
+                    <a href="services/translations/creative.html">Creative Translations</a>
+                    <a href="services/translations/short.html" class="desktop">Short Translations</a></div>
             </div>
             <div class="navbar-services-section">
-                <h2>Spoken Interpretations</h2>
-                <div class="navbar-services-subsection"><p>Simultaneous Interpretations</p>
-                    <p>Specialized Interpretations</p>
-                    <p>Consecutive Interpretations</p>
-                    <p>Court Interpretations</p>
-                    <p>Travel Interpretations</p>
-                    <p>Business Interpretations</p>
-                    <p>Virtual Interpretations</p>
-                    <p>Phone Interpretations</p></div>
+                <h2 class="desktop"><a href="services/interpretations/index.html">Spoken Interpretations</a></h2>
+                <div class="navbar-services-subsection">
+                    <h2 class="mobile"><a href="services/interpretations/index.html">Spoken Interpretations</a></h2>
+
+                    <a href="services/interpretations/simultaneous.html">Simultaneous Interpretations</a>
+                    <a href="services/interpretations/specialized.html" class="desktop">Specialized Interpretations</a>
+                    <a href="services/interpretations/consecutive.html">Consecutive Interpretations</a>
+                    <a href="services/interpretations/court.html">Court Interpretations</a>
+                    <a href="services/interpretations/travel.html" class="desktop">Travel Interpretations</a>
+                    <a href="services/interpretations/business.html" class="desktop">Business Interpretations</a>
+                    <a href="services/interpretations/virtual.html">Virtual Interpretations</a>
+                    <a href="services/interpretations/phone.html" class="desktop">Phone Interpretations</a></div>
             </div>
             <div class="navbar-services-section">
-                <h2>Quality Assurance</h2>
-                <div class="navbar-services-subsection"><p>General Document Proofreading</p>
-                    <p>Certified Proofreading</p>
-                    <p>Specialized Proofreading</p>
-                    <p>Legal Proofreading</p>
-                    <p>Post Machine Translation Editing</p>
-                    <p>Check Interpretations</p></div>
+                <h2 class="desktop"><a href="services/quality/index.html">Quality Assurance</a></h2>
+                <div class="navbar-services-subsection">
+                    <h2 class="mobile"><a href="services/quality/index.html">Quality Assurance</a></h2>
+                    <a href="services/quality/general.html">General Document Proofreading</a>
+                    <a href="services/quality/certified.html" class="desktop">Certified Proofreading</a>
+                    <a href="services/quality/specialized.html" class="desktop">Specialized Proofreading</a>
+                    <a href="services/quality/legal.html" class="desktop">Legal Proofreading</a>
+                    <a href="services/quality/PEMT.html">Post Editing Machine Translation</a>
+                    <a href="services/quality/check.html">Check Interpretations</a></div>
 
             </div>
             <div class="navbar-services-section">
-                <h2>Language & Culture Courses</h2>
-                <div class="navbar-services-subsection"><p>Chinese Language</p>
-                    <p>Chinese Caligraphy</p>
-                    <p>Chinese Dance</p>
-                    <p>Korean Language</p>
-                    <p>English Language</p>
-                    <p>Japanese Language</p>
-                    <p>CA Certified Interpreter</p></div>
+                <h2 class="desktop"><a href="services/courses/index.html">Language & Culture Courses</a></h2>
+                <div class="navbar-services-subsection">
+                    <h2 class="mobile"><a href="services/courses/index.html">Language & Culture Courses</a></h2>
+
+                    <a href="services/courses/mandarin.html">Mandarin Language</a>
+                    <a href="services/courses/cantonese.html" class="desktop">Cantonese Language</a>
+                    <a href="services/courses/cantonese.html">Chinese Caligraphy</a>
+                    <a href="services/courses/dance.html" class="desktop">Chinese Dance</a>
+                    <a href="services/courses/korean.html" class="desktop">Korean Language</a>
+                    <a href="services/courses/english.html">English Language</a>
+                    <a href="services/courses/japanese.html" class="desktop">Japanese Language</a>
+                    <a href="services/courses/certified.html">CA Certified Interpreter</a></div>
             </div>
         </div>
-        <div id="navbar-services-link" class="navbar-link">View All</div>
+        <a id="navbar-services-link" class="navbar-link" href="services/index.html">View All</a>
     </div>
     <div id="navbar-languages-content" class="navbar-content">
         <h2 class="navbar-language-title">Any Language Pair To/From:</h2>
         <div id="navbar-languages-section">
-            <div class="navbar-language-section" id="navbar-language-english">
-                <a href="#" class="navbar-language-text" id="navbar-language-text-active">English</a>
-                <img src="assets/images/flags/usa.jpg" class="navbar-language-image" id="navbar-language-image-active">
+            <a href="language/english/index.html" class="navbar-language-section" id="navbar-language-english">
+                <div class="navbar-language-text" id="navbar-language-text-active">English</div>
+                <img src="assets/images/flags/usa.jpg" class="navbar-language-image desktop" id="navbar-language-image-active">
 
-            </div>
-            <div class="navbar-language-section" id="navbar-language-chinese"> <a href="#" class="navbar-language-text">中文</a>
-                <img src="assets/images/flags/china.png" class="navbar-language-image">
+            </a>
+            <a href="language/chinese/index.html" class="navbar-language-section" id="navbar-language-chinese"> <div class="navbar-language-text">中文</div>
+                <img src="assets/images/flags/china.png" class="navbar-language-image desktop">
 
-            </div>
-            <div class="navbar-language-section" id="navbar-language-japanese"> <a href="#" class="navbar-language-text">日語</a>
-                <img src="assets/images/flags/japan.png" class="navbar-language-image">
+            </a>
+            <a href="language/japanese/index.html" class="navbar-language-section" id="navbar-language-japanese"> <div class="navbar-language-text">日語</div>
+                <img src="assets/images/flags/japan.png" class="navbar-language-image desktop">
 
-            </div>
-            <div class="navbar-language-section" id="navbar-language-korean"> <a href="#" class="navbar-language-text">한국인</a>
-                <img src="assets/images/flags/korea.jpg" class="navbar-language-image">
-
-            </div>
+            </a>
+            <a href="language/korean/index.html" class="navbar-language-section" id="navbar-language-korean"> <div class="navbar-language-text">한국인</div>
+                <img src="assets/images/flags/korea.jpg" class="navbar-language-image desktop">
+            </a>
 
 
         </div>
-        <div id="navbar-languages-link" class="navbar-link">View All</div>
+        <a id="navbar-languages-link" class="navbar-link" href="language/index.html">View All</a>
 
     </div>
     <div id="navbar-industries-content" class="navbar-content">
         <div id="navbar-industries-section">
-            <div class="navbar-industries">
+            <a class="navbar-industries" href="industries/medical/index.html">
                 <img src="assets/images/icons/medical.png">
-                <h3>Medical</h3></div>
-            <div class="navbar-industries">
+                <h3>Medical</h3></a>
+            <a class="navbar-industries" href="industries/entertainment/index.html">
                 <img src="assets/images/icons/entertainment.png">
-                <h3>Entertainment</h3></div>
-            <div class="navbar-industries">
+                <h3>Entertainment</h3></a>
+            <a class="navbar-industries" href="industries/legal/index.html">
                 <img src="assets/images/icons/legal.png">
-                <h3>Legal</h3></div>
-            <div class="navbar-industries">
+                <h3>Legal</h3></a>
+            <a class="navbar-industries" href="industries/government/index.html">
                 <img src="assets/images/icons/government.png">
-                <h3>Government</h3></div>
-            <div class="navbar-industries">
+                <h3>Government</h3></a>
+            <a class="navbar-industries" href="industries/marketing/index.html">
                 <img src="assets/images/icons/marketing.png">
-                <h3>Marketing</h3></div>
-            <div class="navbar-industries">
+                <h3>Marketing</h3></a>
+            <a class="navbar-industries" href="industries/creative/index.html">
                 <img src="assets/images/icons/creative.png">
-                <h3>Creative Works</h3></div>
-            <div class="navbar-industries">
+                <h3>Creative Works</h3></a>
+            <a class="navbar-industries" href="industries/gaming/index.html">
                 <img src="assets/images/icons/gaming.png">
-                <h3>Gaming</h3></div>
-            <div class="navbar-industries">
+                <h3>Gaming</h3></a>
+            <a class="navbar-industries" href="industries/education/index.html">
                 <img src="assets/images/icons/school.png">
-                <h3>Education</h3></div>
-
+                <h3>Education</h3></a>
         </div>
-        <div id="navbar-industries-link" class="navbar-link">View All</div>
+        <a id="navbar-industries-link" class="navbar-link" href="industries/index.html">View All</a>
 
     </div>
 
     <div id="navbar-locations-content" class="navbar-content">
         <div id="navbar-locations-section">
             <div class="navbar-locations-section">
-                <h4>North America</h4>
-                <div class="navbar-locations-subsection"><p>Los Angeles</p>
-                    <p>New York</p>
-                    <p>San Francisco</p>
-                    <p>Seattle</p>
-                    <p>Miami</p>
-                    <p>Chicago</p>
-                    <p>Houston</p>
-                    <p>Mexico City</p>
+                <h4><a href="locations/na/index.html">North America</a></h4>
+                <div class="navbar-locations-subsection">
+                    <a href="locations/na/losangeles/index.html">Los Angeles</a>
+                    <a href="locations/na/chicago/index.html">Chicago</a>
+                    <a href="locations/na/newyork/index.html">New York</a>
+                    <a href="locations/na/seattle/index.html">Seattle</a>
+                    <a href="locations/na/miami/index.html" class="desktop">Miami</a>
+                    <a href="locations/na/sanfrancisco/index.html">San Francisco</a>
+                    <a href="locations/na/houston/index.html" class="desktop">Houston</a>
+                    <a href="locations/na/mexicocity/index.html">Mexico <br class="mobile"> City</a>
+                    <a href="locations/na/ontario/index.html" class="desktop">Ontario</a>
+                    <a href="locations/na/quebec/index.html" class="desktop">Quebec</a>
+                    <a href="locations/na/cabosanlucas/index.html" class="desktop">Cabo San Lucas</a>
+
 
                 </div>
             </div>
 
             <div class="navbar-locations-section">
-                <h4>Asia</h4>
-                <div class="navbar-locations-subsection"><p>Singapore</p>
-                    <p>Beijing</p>
-                    <p>Shanghai</p>
-                    <p>Shenzhen</p>
-                    <p>Tokyo</p>
-                    <p>Seoul</p>
-                    <p>Taipei</p>
+                <h4><a href="locations/as/index.html">Asia</a></h4>
+                <div class="navbar-locations-subsection">
+                    <a href="locations/as/beijing/index.html">Beijing</a>
+                    <a href="locations/as/shanghai/index.html">Shanghai</a>
+                    <a href="locations/as/shenzhen/index.html">Shenzhen</a>
+                    <a href="locations/as/singapore/index.html" class="desktop">Singapore</a>
+                    <a href="locations/as/tokyo/index.html">Tokyo</a>
+                    <a href="locations/as/seoul/index.html">Seoul</a>
+                    <a href="locations/as/taipei/index.html">Taipei</a>
                 </div>
 
             </div>
             <div class="navbar-locations-section">
-                <h4>Europe</h4>
-                <div class="navbar-locations-subsection"><p>Milan</p>
-                    <p>London</p>
-                    <p>Madrid</p>
-                    <p>Paris</p>
-                    <p>Brussels</p>
-                    <p>Moscow</p>
+                <h4><a href="locations/eu/index.html">Europe</a></h4>
+                <div class="navbar-locations-subsection">
+                    <a href="locations/eu/london/index.html">London</a>
+                    <a href="locations/eu/barcelona/index.html">Barcelona</a>
+                    <a href="locations/eu/munich/index.html">Munich</a>
+                    <a href="locations/eu/paris/index.html">Paris</a>
+                    <a href="locations/eu/madrid/index.html">Madrid</a>
+                    <a href="locations/eu/milan/index.html">Milan</a>
+                    <a href="locations/eu/berlin/index.html" class="desktop">Berlin</a>
+                    <a href="locations/eu/lisbon/index.html" class="desktop">Lisbon</a>
+                    <a href="locations/eu/rome/index.html" class="desktop">Rome</a>
                 </div>
             </div>
             <div class="navbar-locations-section">
-                <h4>Others</h4>
-                <div class="navbar-locations-subsection"><p>Cape Town</p>
-                    <p>Delhi</p>
-                    <p>Rio De Janiro</p>
-                    <p>Cairo</p>
+                <h4 href="locations/others/index.html">Others</h4>
+                <div class="navbar-locations-subsection"><a href="locations/others/capetown/index.html">Cape Town</a>
+                    <a href="locations/others/delhi/index.html">Delhi</a>
+                    <a href="locations/others/saopaulo/index.html">Sao Paulo</a>
+                    <a href="locations/others/cairo/index.html">Cairo</a>
                 </div>
             </div>
 
         </div>
-        <div id="navbar-locations-link" class="navbar-link">View All</div>
+        <a href="locations/index.html" id="navbar-locations-link" class="navbar-link">View All</a>
     </div>
     <div id="navbar-about-content" class="navbar-content">
         <div id="navbar-about-section">
-            <div class="navbar-about">About Us</div>
-            <div class="navbar-about">Contact Us</div>
-            <div class="navbar-about">FAQ</div>
-            <div class="navbar-about">Pricing</div>
-            <div class="navbar-about">Press Release</div>
-
-            <div class="navbar-about">Blog</div>
-            <div class="navbar-about">Our Promise & Guarantee</div>
-            <div class="navbar-about">AI Policy</div>
-            <div class="navbar-about">Privacy Policy</div>
+            <a href="company/about.html" class="navbar-about">About Us</a>
+            <a href="company/contact.html" class="navbar-about">Contact Us</a>
+            <a href="company/faq.html" class="navbar-about">FAQ</a>
+            <a href="company/pricing.html" class="navbar-about">Pricing</a>
+            <a href="company/news.html" class="navbar-about">Press Release</a>
+            <a href="blog/index.html" class="navbar-about">Blog</a>
+            <a href="company/promise.html" class="navbar-about">Our Promise & Guarantee</a>
+            <a href="company/ai.html" class="navbar-about">AI Policy</a>
+            <a href="company/privacy.html" class="navbar-about">Privacy Policy</a>
 
         </div>
-        <div id="navbar-about-link" class="navbar-link">View All</div>
+        <a href="company/index.html" id="navbar-about-link" class="navbar-link">View All</a>
 
     </div>
     <div id="navbar-language-content" class="navbar-content">
         <div id="navbar-language-section">
-            <div id="navbar-languages-english" class="navbar-language">English / English</div>
+            <a href="template-master.html" id="navbar-languages-english" class="navbar-language">English / English</a>
 
-            <div id="navbar-languages-chinese" class="navbar-language">Chinese / 中文</div>
-            <div id="navbar-languages-korean" class="navbar-language">Korean / 한국인</div>
-            <div id="navbar-languages-japanese" class="navbar-language">Japanese / 日本语</div>
+            <a href="cn/index.html" id="navbar-languages-chinese" class="navbar-language">Chinese / 中文</a>
+            <a href="kr/index.html" id="navbar-languages-korean" class="navbar-language">Korean / 한국인</a>
+            <a href="jp/index.html" id="navbar-languages-japanese" class="navbar-language">Japanese / 日本语</a>
 
         </div>
     </div>
     <div id="navbar-languages-mobile-content" class="navbar-content">
         <div id="navbar-languages-mobile-section">
-            <div  class="navbar-language">English / English</div>
+            <a href="template-master.html" class="navbar-language">English / English</a>
 
-            <div  class="navbar-language">Chinese / 中文</div>
-            <div  class="navbar-language">Korean / 한국인</div>
-            <div  class="navbar-language">Japanese / 日本语</div>
+            <a href="cn/index.html" class="navbar-language">Chinese / 中文</a>
+            <a href="kr/index.html" class="navbar-language">Korean / 한국인</a>
+            <a href="jp/index.html" class="navbar-language">Japanese / 日本语</a>
 
         </div>
     </div>
@@ -310,7 +328,7 @@
     <hr>
         <div class="services right">
             <div class="services-content right"><h2 class="services-header">Culture</h2>
-                <p class="services-text">Our Translation Services ensure accurate societal, cultural, and historical references.<br> <br><a href="#">Find out more</a>.</p>
+                <p class="services-text">Our Translation Services ensure accurate societal, cultural, and historical references.<br> <br><a href="#" id="hello">Find out more</a>.</p>
             </div>
             </div>
     <hr>
@@ -324,12 +342,12 @@
 
         <div id="team">
             <div class="team-content">
-                <div class="team-card">
+                <div class="team-card" id="samuel">
                     <img src="assets/images/profiles/samuel.jpg" class="team-image">
-
+<div class="profile-caption">A</div>
 
                 </div>
-                <div class="team-description">
+                <div class="team-description" id="samuel-card">
                         <button class="accordion">
                             View Qualifications
                         </button>
@@ -337,7 +355,7 @@
                             Hellow
                         </div>
 
-                    <div class="team-achievements" id="team-achievements">
+                    <div class="team-achievements">
                         <div class="team-achievement">
                             <h2>Experience</h2><br>
                             13 Years</div>
@@ -348,10 +366,60 @@
                 </div>
             </div>
 
+            <div class="team-content">
+                <div class="team-card" id="shen">
+                    <img src="assets/images/profiles/samuel.jpg" class="team-image">
+                    <div class="profile-caption">B</div>
+
+                </div>
+                <div class="team-description" id="shen-card">
+                    <button class="accordion">
+                        View Qualifications
+                    </button>
+                    <div class="panel">
+                        Hellow
+                    </div>
+
+                    <div class="team-achievements">
+                        <div class="team-achievement">
+                            <h2>Experience</h2><br>
+                            13 Years</div>
+                        <div class="team-achievement"><h2>Language</h2><br>Mandarin/English</div>
+                        <div class="team-achievement"><h2>Rating</h2><br>High</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="team-content">
+                <div class="team-card" id="john">
+                    <img src="assets/images/profiles/samuel.jpg" class="team-image">
+                    <div class="profile-caption">C</div>
+
+                </div>
+                <div class="team-description" id="john-card">
+                    <button class="accordion">
+                        View Qualifications
+                    </button>
+                    <div class="panel">
+                        Hellow
+                    </div>
+
+                    <div class="team-achievements">
+                        <div class="team-achievement">
+                            <h2>Experience</h2><br>
+                            13 Years</div>
+                        <div class="team-achievement"><h2>Language</h2><br>Mandarin/English</div>
+                        <div class="team-achievement"><h2>Rating</h2><br>High</div>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
+<div class="team-view-all"><a href="team/interpreters/index.html">View All >></a></div>
     </div>
-    <div id="index-contact-title" class="section-title">
+    <div class="section-title">
         <h2>Contact</h2>
     </div>
     <hr>
@@ -372,9 +440,10 @@
             <input type="text" name="subject" id="subject" placeholder="Subject*"><br><br>
             <textarea id="message" name="message" placeholder="Message*"></textarea><br><br>
             <input type="submit" name="submit" id="submit"><br>
-            <p>Have a translation project in mind? <a href="#">Request a quote</a> today!</p>
+            <p>Have a translation project in mind? <a href="company/quote.html">Request a quote</a> today!</p>
         </div>
     </div>
+
     <div class="section-title">
         <h2>Resources</h2>
     </div>
@@ -434,74 +503,84 @@
                 <div id="footer-contact">
                     <p>Phone: (626) 282-8993</p>
                 </div><br><br>
-                <div id="footer-quote"><p class="quotebutton">Request A Quote</p></div>
+                <div id="footer-quote"><a href="company/quote.html" class="quotebutton">Request A Quote</a></div>
             </div>
             <div id="footer-services" class="footer-sections">
-                <h2 class="footer-header">Services</h2>
-                <p>Document Translations</p>
-                <p>Consecutive Interpretations</p>
-                <p>Simultaneous Interpretations</p>
-                <p>Quality Assurance</p>
-                <p>Localization Services</p>
-                <p>Media Dubbing/Subbing</p>
-                <p>Certificate Translations</p>
-                <p>Literature Translations</p>
+                <h2 class="footer-header"><a href="services/index.html">Services</a></h2>
+                <p><a href="services/translations/certified.html">Certified Translations</a></p>
+                <p><a href="services/translations/specialized.html">Specialized Translations</a></p>
+                <p><a href="services/interpretations/simultaneous.html">Simultaneous Interpretations</a></p>
+                <p><a href="services/interpretations/travel.html">Travel Interpretations</a></p>
+                <p><a href="services/quality/certified.html">Certified Proofreading</a></p>
+                <p><a href="services/quality/PEMT.html">PEMT</a></p>
+                <p><a href="services/courses/mandarin.html">Mandarin Course</a></p>
+                <p><a href="services/courses/certified.html">Court Certification Course</a></p>
+
             </div>
             <div id="footer-industries" class="footer-sections">
-                <h2 class="footer-header">Industries</h2>
-                <p>Medical</p>
-                <p>Entertainment</p>
-                <p>Legal</p>
-                <p>Government</p>
-                <p>Marketing</p>
-                <p>Creative Works</p>
-                <p>Gaming</p>
-                <p>Education</p>
+                <h2 class="footer-header"><a href="industries/index.html">Industries</a></h2>
+                <p><a href="industries/medical/index.html">Medical</a></p>
+                <p><a href="industries/entertainment/index.html">Entertainment</a></p>
+                <p><a href="industries/legal/index.html">Legal</a></p>
+                <p><a href="industries/government/index.html">Government</a></p>
+                <p><a href="industries/marketing/index.html">Marketing</a></p>
+                <p><a href="industries/creative/index.html">Creative Works</a></p>
+                <p><a href="industries/gaming/index.html">Gaming</a></p>
+                <p><a href="industries/education/index.html">Education</a></p>
             </div>
             <div id="footer-company" class="footer-sections">
-                <h2 class="footer-header">Company</h2>
-                <p>About Us</p>
-                <p>Locations</p>
-                <p>Our Company</p>
-                <p>Our Promise</p>
-                <p>Our Guarantee</p>
-                <p>Our Team</p>
-                <p>Our History</p>
+                <h2 class="footer-header"><a href="company/index.html">Company</a></h2>
+                <p><a href="company/about.html">About Us</a></p>
+                <p><a href="locations/index.html">Locations</a></p>
+                <p><a href="company/mission.html">Our Mission</a></p>
+                <p><a href="company/promise.html">Our Promise</a></p>
+                <p><a href="company/history.html">Our History</a></p>
+                <p><a href="team/index.html">Our Team</a></p>
+                <p><a href="company/leadership.html">Leadership</a></p>
             </div>
             <div id="footer-help" class="footer-sections">
-                <h2 class="footer-header">Help</h2>
-                <p>Contact Us</p>
-                <p>Careers</p>
-                <p>AI/ML</p>
-                <p>Pricing & Payments</p>
-                <p>FAQ</p>
-                <p>Blog</p>
-                <p>Privacy Policy</p>
+                <h2 class="footer-header"><a href="company/help.html">Help</a></h2>
+                <p><a href="company/contact.html">Contact Us</a></p>
+                <p><a href="company/careers.html">Careers</a></p>
+                <p><a href="company/ai.html">AI/ML Policy</a></p>
+                <p><a href="company/pricing.html">Pricing & Payments</a></p>
+                <p><a href="company/faq.html">FAQ</a></p>
+                <p><a href="company/privacy.html">Privacy Policy</a></p>
+                <p><a href="blog/index.html">Blog</a></p>
             </div>
         </div>
     </footer>
 </div>
 <script>
-// ACCORDIAN START
-var acc = document.getElementsByClassName("accordion");
-var i;
+    // ACCORDIAN START
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.height) {
-            panel.style.height = null;
-            document.getElementById("team-achievements").style.display = "grid";
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.height) {
+                panel.style.height = null;
+                panel.nextElementSibling.style.display = "grid";
 
-        } else {
-            panel.style.height = "calc(100% - 60px)";
-            document.getElementById("team-achievements").style.display = "none";
+            } else {
+                panel.style.height = "calc(100% - 60px)";
+                panel.nextElementSibling.style.display = "none";
 
+            }
+        });
+    }
+    // ACCORDIAN END
+    function findPosition(obj) {
+        var currenttop = 0;
+        if (obj.offsetParent) {
+            do {
+                currenttop += obj.offsetTop;
+            } while ((obj = obj.offsetParent));
+            return [currenttop];
         }
-    });
-}
-// ACCORDIAN END
+    }
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     if(vw > 1024) {
         desktopJS();
@@ -560,9 +639,9 @@ for (i = 0; i < acc.length; i++) {
 
         })
 
-        document.getElementById("navbar-languages-mobile").addEventListener("click", function () {
+        document.getElementById("navbar-languages-mobile").addEventListener("click", function (e) {
 
-
+            e.preventDefault();
             resetNav()
             quote.style.display = "none";
             language.style.display = "none";
@@ -579,8 +658,9 @@ for (i = 0; i < acc.length; i++) {
 
 // CHANGE NAVBAR CONTENT
         for (j = 0; j < nav.length; j++) {
-            nav[j].addEventListener("click", function () {
+            nav[j].addEventListener("click", function (e) {
 
+                e.preventDefault();
 
                 resetNav()
                 quote.style.display = "none";
@@ -680,9 +760,33 @@ for (i = 0; i < acc.length; i++) {
 
             }
         })
-    }
         //         NAVBAR CODE END
+// TEAM CODE START
+        var team = document.getElementsByClassName("team-card");
+        for (j = 0; j < team.length; j++ ) {
+            team[j].addEventListener("click", function (e) {
+                let description = document.getElementById(this.id + "-card");
+                if (this.style.width === "100%" || this.style.width === "") {
+                    this.style.width = "auto";
+                    this.style.margin = "0";
+                    this.parentElement.style.marginLeft = "0";
 
+                    this.parentElement.style.width = "100%";
+                    description.style.width = "100%";
+                    this.parentElement.parentElement.prepend(this.parentElement);
+                    window.scroll({ top: findPosition(this) - 100, behavior: 'smooth'});
+
+
+                } else {
+                    window.scroll({ top: findPosition(this) - 100, behavior: 'smooth'});
+
+                    this.style.width = "100%";
+                    this.parentElement.style.width = "25%";
+                }
+
+            })
+        }
+    }
 
 
 </script>
