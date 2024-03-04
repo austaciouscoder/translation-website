@@ -34,13 +34,67 @@
     justify-content: start;
     height:400px;
     width:100%;
-    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/meeting.jpg) right bottom no-repeat;
+}
+#book {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/book.jpg) right bottom no-repeat;
+}
+#movie {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/movie.jpg) right bottom no-repeat;
+
+}
+#communication {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/communication.jpg) right bottom no-repeat;
+
+}
+#essay {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/essay.jpg) right bottom no-repeat;
+
+}
+#typewriter {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/typewriter.jpg) right center no-repeat;
+
+}
+#screening {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/screening.jpg) right center no-repeat;
+
+}
+#sound {
+    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/sound.jpg) right center no-repeat;
+
+}
+/* RIGHT */
+#poetry {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/poetry.jpg) left bottom no-repeat;
+
+}
+#culture {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/culture.jpg) left center no-repeat;
+
+}
+#classes {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/classes.jpg) left center no-repeat;
+
+}
+#graduation {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/graduation.jpg) left center no-repeat;
+
+}
+#studio {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/studio.jpg) left top no-repeat;
+
+}
+#dragon {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/dragon.jpg) left center no-repeat;
+
+}
+#storyline {
+    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/storyline.jpg) left center no-repeat;
+
 }
 .services.right {
     display:flex;
     width:100%;
     justify-content: end;
-    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255), rgb(255, 255, 255)),url(../images/meeting.jpg) left bottom no-repeat;
 
 }
 
@@ -436,6 +490,10 @@ width:80%;
         grid-row-gap: 20px;
     }
     .team-achievements:nth-child(3) {
+
+    }
+    .services-text {
+        width:100%;
 
     }
 }
