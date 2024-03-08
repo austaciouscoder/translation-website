@@ -16,7 +16,7 @@
 
 
     <nav id="navbar">
-        <div id="navbar-logo"><a id="navbar-logo-content" href="../../template-master.html"><img id="navbar-logo-image" src="../../assets/images/logo.png">
+        <div id="navbar-logo"><a id="navbar-logo-content" href="../../index.html"><img id="navbar-logo-image" src="../../assets/images/logo.png">
             <div id="navbar-logo-text">Abacus <br>Translations</div>
         </a>
             <div id="navbar-menu-open" class="mobile">X</div>
@@ -96,7 +96,8 @@
                     <a href="../../services/translations/certificate.html" class="desktop">Certificate Translations</a>
                     <a href="../../services/translations/legal.html" class="desktop">Legal Translations</a>
                     <a href="../../services/translations/creative.html">Creative Translations</a>
-                    <a href="../../services/translations/short.html" class="desktop">Short Translations</a></div>
+                    <a href="../../services/translations/short.html" class="desktop">Short Translations</a>
+                    <a href="../../services/translations/website.html" class="desktop">Website Translations</a></div>
             </div>
             <div class="navbar-services-section">
                 <h2 class="desktop"><a href="../../services/interpretations/index.html">Spoken Interpretations</a></h2>
@@ -106,7 +107,7 @@
                     <a href="../../services/interpretations/simultaneous.html">Simultaneous Interpretations</a>
                     <a href="../../services/interpretations/specialized.html" class="desktop">Specialized Interpretations</a>
                     <a href="../../services/interpretations/consecutive.html">Consecutive Interpretations</a>
-                    <a href="../../services/interpretations/court.html">Court Interpretations</a>
+                    <a href="../../services/interpretations/certified.html">Certified Interpretations</a>
                     <a href="../../services/interpretations/travel.html" class="desktop">Travel Interpretations</a>
                     <a href="../../services/interpretations/business.html" class="desktop">Business Interpretations</a>
                     <a href="../../services/interpretations/virtual.html">Virtual Interpretations</a>
@@ -275,7 +276,7 @@
     </div>
     <div id="navbar-language-content" class="navbar-content">
         <div id="navbar-language-section">
-            <a href="../../template-master.html" id="navbar-languages-english" class="navbar-language">English / English</a>
+            <a href="../../index.html" id="navbar-languages-english" class="navbar-language">English / English</a>
 
             <a href="../../cn/index.html" id="navbar-languages-chinese" class="navbar-language">Chinese / 中文</a>
             <a href="../../kr/index.html" id="navbar-languages-korean" class="navbar-language">Korean / 한국인</a>
@@ -285,7 +286,7 @@
     </div>
     <div id="navbar-languages-mobile-content" class="navbar-content">
         <div id="navbar-languages-mobile-section">
-            <a href="../../template-master.html" class="navbar-language">English / English</a>
+            <a href="../../index.html" class="navbar-language">English / English</a>
 
             <a href="../../cn/index.html" class="navbar-language">Chinese / 中文</a>
             <a href="../../kr/index.html" class="navbar-language">Korean / 한국인</a>
@@ -415,7 +416,7 @@
             </div>
 
         </div>
-<div class="team-view-all"><a href="../../team/interpreters/index.html">View All >></a></div>
+<div class="view-all"><a href="../../team/interpreters/index.html">View All >></a></div>
     </div>
     <div class="section-title">
         <h2>Contact</h2>
@@ -579,6 +580,7 @@
             return [currenttop];
         }
     }
+
     let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     if(vw > 1024) {
         desktopJS();
@@ -596,6 +598,7 @@
 
         }
     }
+
     window.addEventListener("resize", onresize);
 
     function mobileJS() {
@@ -761,10 +764,33 @@
         //         NAVBAR CODE END
 // TEAM CODE START
         var team = document.getElementsByClassName("team-card");
-        for (j = 0; j < team.length; j++ ) {
+        let content = document.getElementsByClassName("team-content")
+        let teamarray = [];
+        for (let j = 0; j < team.length; j++ ) {
+            teamarray.push(team[j].id);
+            if (j % 3 === 2) {
+                content[j].style.marginRight = "0";
+            } else {
+                content[j].style.marginRight = "12.5%";
+
+            }
             team[j].addEventListener("click", function (e) {
                 let description = document.getElementById(this.id + "-card");
                 if (this.style.width === "100%" || this.style.width === "") {
+                    let x = teamarray.indexOf(this.id);
+                    console.log(x);
+                    teamarray.splice(x, 1);
+
+                    console.log(teamarray);
+                    for (j = 0; j < teamarray.length; j++) {
+                        if (j % 3 === 2) {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "0%";
+                        } else {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "12.5%";
+                        }
+                    }
+                    teamarray.unshift(this.id);
+
                     this.style.width = "auto";
                     this.style.margin = "0";
                     this.parentElement.style.marginLeft = "0";
@@ -776,8 +802,14 @@
 
 
                 } else {
+                    for (j = 0; j < teamarray.length; j++ ) {
+                        if (j % 3 === 2) {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "0%";
+                        } else {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "12.5%";
+                        }
+                    }
                     window.scroll({ top: findPosition(this) - 100, behavior: 'smooth'});
-
                     this.style.width = "100%";
                     this.parentElement.style.width = "25%";
                 }

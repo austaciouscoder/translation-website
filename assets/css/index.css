@@ -1,0 +1,114 @@
+#services {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    position:relative;
+    height:800px;
+
+
+}
+.services {
+    height:100%;
+    display:block;
+    position:relative;
+    z-index:0;
+    cursor:pointer;
+}
+#written-translations, #quality-assurance {
+    text-align: right;
+
+}
+#language-classes, #spoken-interpretations {
+    text-align: left;
+}
+.services-title {
+    position:absolute;
+    font-size:2em;
+    font-weight:bold;
+    padding:30px;
+
+}
+#classes-title {
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
+    border-bottom-right-radius: 20px;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+}
+#language-classes {
+    background: linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/classes.jpg") no-repeat;
+    background-size: auto 130%;
+
+    border-top:2px solid black;
+    border-left:2px solid black;
+}
+#spoken-title {
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
+    border-top-right-radius: 20px;
+    border-top:1px solid black;
+    border-right:1px solid black;
+}
+#spoken-interpretations {
+
+    background: linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/simultaneous.jpg") no-repeat;
+    background-size: auto 130%;
+    border-bottom:2px solid black;
+    border-left:2px solid black;
+}
+#quality-title {
+    top: 0;
+    right: 0;
+    background: linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
+    border-bottom-left-radius: 20px;
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+
+}
+#quality-assurance {
+
+    background: linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/quality.jpg") no-repeat;
+    background-size: auto 130%;
+    border-top:2px solid black;
+}
+#written-title {
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
+    border-top-left-radius: 20px;
+    border-top:1px solid black;
+    border-left:1px solid black;
+}
+#written-translations {
+
+    background: linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/document.jpg") no-repeat;
+    background-size: auto 130%;
+
+    border-bottom:2px solid black;
+}
+.services-image {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:60%;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #services {
+        grid-template-columns: auto;
+    }
+
+
+    .services-title {
+        font-size:1em;
+    }
+    #written-translations, #spoken-interpretations, #language-classes, #quality-assurance {
+        background-size: cover;
+        background-position:center;
+    }
+}

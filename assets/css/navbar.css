@@ -312,12 +312,17 @@ body {
     width: min(200px, 80%);
 
 }
+.view-all {
+    padding:30px;
+    text-align: center;
+}
 .mobile {
     display:none;
 }
 .desktop {
     display:inline-block;
 }
+
 /* REUSEABLE END */
 /* START FOOTER SECTION */
 #site-footer {
