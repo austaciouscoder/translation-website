@@ -322,6 +322,10 @@ body {
 .desktop {
     display:inline-block;
 }
+.center {
+    margin-left:auto;
+    margin-right:auto;
+}
 
 /* REUSEABLE END */
 /* START FOOTER SECTION */
