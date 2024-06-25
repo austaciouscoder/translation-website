@@ -398,7 +398,7 @@
             <div class="team-content">
                 <div class="team-card" id="d">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">A</div>
+                    <div class="profile-caption">D</div>
 
                 </div>
                 <div class="team-description" id="d-card">
@@ -423,7 +423,7 @@
             <div class="team-content">
                 <div class="team-card" id="e">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">B</div>
+                    <div class="profile-caption">E</div>
 
                 </div>
                 <div class="team-description" id="e-card">
@@ -447,7 +447,7 @@
             <div class="team-content">
                 <div class="team-card" id="f">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">C</div>
+                    <div class="profile-caption">F</div>
 
                 </div>
                 <div class="team-description" id="f-card">
@@ -472,7 +472,7 @@
             <div class="team-content">
                 <div class="team-card" id="g">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">A</div>
+                    <div class="profile-caption">G</div>
 
                 </div>
                 <div class="team-description" id="g-card">
@@ -497,7 +497,7 @@
             <div class="team-content">
                 <div class="team-card" id="h">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">B</div>
+                    <div class="profile-caption">H</div>
 
                 </div>
                 <div class="team-description" id="h-card">
@@ -521,7 +521,7 @@
             <div class="team-content">
                 <div class="team-card" id="i">
                     <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
-                    <div class="profile-caption">B</div>
+                    <div class="profile-caption">I</div>
 
                 </div>
                 <div class="team-description" id="i-card">
@@ -929,8 +929,26 @@
 
 
                 } else {
+                    let value =  this.id.toLowerCase().charCodeAt(0) - 97;
+
+                    teamarray.splice(value, 0, this.id);
+                    console.log(teamarray)
+                    let element = this.parentElement;
+                    this.parentElement.parentElement.insertBefore(element, element.parentElement.children[value+1]);
+                    for (j = 0; j < teamarray.length; j++) {
+                        if (j % 3 === 2) {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "0%";
+
+                        } else {
+                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "12.5%";
+                        }
+                    }
 
 
+
+                    window.scroll({ top: findPosition(this) - 100, behavior: 'smooth'});
+                    this.style.width = "100%";
+                    this.parentElement.style.width = "25%";
                 }
 
 
