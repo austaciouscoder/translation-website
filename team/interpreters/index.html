@@ -136,7 +136,7 @@
 
                     <a href="../../services/courses/mandarin.html">Mandarin Language</a>
                     <a href="../../services/courses/cantonese.html" class="desktop">Cantonese Language</a>
-                    <a href="../../services/courses/cantonese.html">Chinese Caligraphy</a>
+                    <a href="../../services/courses/calligraphy.html">Chinese Calligraphy</a>
                     <a href="../../services/courses/dance.html" class="desktop">Chinese Dance</a>
                     <a href="../../services/courses/korean.html" class="desktop">Korean Language</a>
                     <a href="../../services/courses/english.html">English Language</a>
@@ -501,6 +501,30 @@
 
                 </div>
                 <div class="team-description" id="h-card">
+                    <button class="accordion">
+                        View Qualifications
+                    </button>
+                    <div class="panel">
+                        Hellow
+                    </div>
+
+                    <div class="team-achievements">
+                        <div class="team-achievement">
+                            <h2>Experience</h2><br>
+                            13 Years</div>
+                        <div class="team-achievement"><h2>Language</h2><br>Mandarin/English</div>
+                        <div class="team-achievement"><h2>Rating</h2><br>High</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="team-content">
+                <div class="team-card" id="i">
+                    <img src="../../assets/images/profiles/samuel.jpg" class="team-image">
+                    <div class="profile-caption">B</div>
+
+                </div>
+                <div class="team-description" id="i-card">
                     <button class="accordion">
                         View Qualifications
                     </button>
@@ -884,16 +908,15 @@
                     let x = teamarray.indexOf(this.id);
                     console.log(x);
                     teamarray.splice(x, 1);
-
                     console.log(teamarray);
                     for (j = 0; j < teamarray.length; j++) {
                         if (j % 3 === 2) {
                             document.getElementById(teamarray[j]).parentElement.style.marginRight = "0%";
+
                         } else {
                             document.getElementById(teamarray[j]).parentElement.style.marginRight = "12.5%";
                         }
                     }
-                    teamarray.unshift(this.id);
 
                     this.style.width = "auto";
                     this.style.margin = "0";
@@ -906,17 +929,10 @@
 
 
                 } else {
-                    for (j = 0; j < teamarray.length; j++ ) {
-                        if (j % 3 === 2) {
-                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "0%";
-                        } else {
-                            document.getElementById(teamarray[j]).parentElement.style.marginRight = "12.5%";
-                        }
-                    }
-                    window.scroll({ top: findPosition(this) - 100, behavior: 'smooth'});
-                    this.style.width = "100%";
-                    this.parentElement.style.width = "25%";
+
+
                 }
+
 
             })
         }
