@@ -537,6 +537,53 @@ text-align: center;
     margin: 10px;
     object-fit: cover;
 }
+#language {
+    display:flex;
+    text-align: center;
+    justify-content: end;
+    height:450px;
+
+    background: linear-gradient(to right,rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255), rgb(255, 255, 255)),url(../images/language.jpg) left center no-repeat;
+
+}
+#language-content {
+    float:left;
+    margin-right:5%;
+    font-size:1.8em;
+    font-weight:bold;
+    padding:20px;
+    width:400px;
+    height:250px;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    position:relative;
+
+}
+.language-section {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    border:1px solid black;
+    position:relative;
+
+}
+.language-text {
+    z-index:1;
+
+}
+.language-image {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:0;
+    opacity:60%;
+}
+
 @media only screen and (max-width: 1024px) {
     #intro {
         width: min(400px, 70%);
