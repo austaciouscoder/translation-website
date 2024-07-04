@@ -147,8 +147,109 @@
 
 
 }
-    function desktopJS() {
 
+    function desktopJS() {
+        // SERVICES CODE START
+        if(document.getElementById("services") != null) {
+            var services = document.getElementsByClassName("services");
+            document.getElementById("services").addEventListener("mouseout", function () {
+                resetServices()
+            })
+            for (j = 0; j < services.length; j++) {
+
+                services[j].addEventListener("mouseover", function () {
+                    resetServices();
+
+                    if (this.id === "written-translations") {
+                        this.style.background = "url(\"../assets/images/document.jpg\") no-repeat";
+                    } else if (this.id === "quality-assurance") {
+                        this.style.background = "url(\"../assets/images/quality.jpg\") no-repeat";
+
+                    } else if (this.id === "spoken-interpretations") {
+                        this.style.background = "url(\"../assets/images/simultaneous.jpg\") no-repeat";
+
+                    } else if (this.id === "language-classes") {
+                        this.style.background = "url(\"../assets/images/classes.jpg\") no-repeat";
+
+                    }
+                    this.firstElementChild.style.background = "rgba(255,255,255,.7)";
+                    this.style.backgroundSize = "auto 130%";
+
+
+                })
+
+            }
+
+            function resetServices() {
+                document.getElementById("language-classes").style.background = "linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../assets/images/classes.jpg\") no-repeat";
+                document.getElementById("language-classes").style.backgroundSize = "auto 130%";
+                document.getElementById("language-classes").firstElementChild.style.background = "linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+                document.getElementById("spoken-interpretations").style.background = "linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../assets/images/simultaneous.jpg\") no-repeat";
+                document.getElementById("spoken-interpretations").style.backgroundSize = "auto 130%";
+                document.getElementById("spoken-interpretations").firstElementChild.style.background = "linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+                document.getElementById("quality-assurance").style.background = "linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../assets/images/quality.jpg\") no-repeat";
+                document.getElementById("quality-assurance").style.backgroundSize = "auto 130%";
+                document.getElementById("quality-assurance").firstElementChild.style.background = "linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+                document.getElementById("written-translations").style.background = " linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../assets/images/document.jpg\") no-repeat";
+                document.getElementById("written-translations").style.backgroundSize = "auto 130%";
+                document.getElementById("written-translations").firstElementChild.style.background = "linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+
+            }
+        }
+        if(document.getElementById("regions") != null) {
+
+            var regions = document.getElementsByClassName("regions");
+            document.getElementById("regions").addEventListener("mouseout", function () {
+                resetRegions()
+            })
+            for (j = 0; j < regions.length; j++) {
+
+                regions[j].addEventListener("mouseover", function () {
+                    resetRegions();
+
+                    if (this.id === "written-translations") {
+                        this.style.background = "url(\"../assets/images/na.jpg\") no-repeat";
+                    } else if (this.id === "quality-assurance") {
+                        this.style.background = "url(\"../assets/images/as.jpg\") no-repeat";
+
+                    } else if (this.id === "spoken-interpretations") {
+                        this.style.background = "url(\"../assets/images/eu.jpg\") no-repeat";
+
+                    } else if (this.id === "language-classes") {
+                        this.style.background = "url(\"../assets/images/other.jpg\") no-repeat";
+
+                    }
+                    this.firstElementChild.style.background = "rgba(255,255,255,.7)";
+                    this.style.backgroundSize = "auto 130%";
+
+
+                })
+
+            }
+
+            function resetRegions() {
+                document.getElementById("language-classes").style.background = "linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/other.jpg\") no-repeat";
+                document.getElementById("language-classes").style.backgroundSize = "auto 130%";
+                document.getElementById("language-classes").firstElementChild.style.background = "linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+                document.getElementById("spoken-interpretations").style.background = "linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/eu.jpg\") no-repeat";
+                document.getElementById("spoken-interpretations").style.backgroundSize = "auto 130%";
+                document.getElementById("spoken-interpretations").firstElementChild.style.background = "linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+                document.getElementById("quality-assurance").style.background = "linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/as.jpg\") no-repeat";
+                document.getElementById("quality-assurance").style.backgroundSize = "auto 130%";
+                document.getElementById("quality-assurance").firstElementChild.style.background = "linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+                document.getElementById("written-translations").style.background = " linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/na.jpg\") no-repeat";
+                document.getElementById("written-translations").style.backgroundSize = "auto 130%";
+                document.getElementById("written-translations").firstElementChild.style.background = "linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
+
+
+            }
+        }
+// SERVICES CODE END
 // NAVBAR CODE START
     var nav = document.getElementsByClassName("navbar");
     let navbarcontent = document.getElementById("navbar-content")
@@ -273,6 +374,21 @@
 
 
             })
+
+        }
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
         }
 
     }

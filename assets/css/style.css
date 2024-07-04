@@ -84,7 +84,7 @@ opacity:60%;
 /* END LANGUAGE SECTION */
 
 /* START SERVICES SECTION */
-#index-services {
+#services {
     display:grid;
     grid-template-columns: 50% 50%;
     position:relative;
@@ -92,28 +92,28 @@ opacity:60%;
 
 
 }
-.index-services {
+.services {
     height:100%;
     display:block;
     position:relative;
 z-index:0;
     cursor:pointer;
 }
-#index-written-translations, #index-quality-assurance {
+#written-translations, #quality-assurance {
 text-align: right;
 
 }
-#index-language-classes, #index-spoken-interpretations {
+#language-classes, #spoken-interpretations {
     text-align: left;
 }
-.index-services-title {
+.services-title {
     position:absolute;
     font-size:2em;
     font-weight:bold;
     padding:30px;
 
 }
-#index-classes-title {
+#classes-title {
     top: 0;
     left: 0;
     background: linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
@@ -121,14 +121,14 @@ text-align: right;
     border-bottom:1px solid black;
     border-right:1px solid black;
 }
-#index-language-classes {
+#language-classes {
     background: linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/classes.jpg") no-repeat;
     background-size: auto 130%;
 
     border-top:2px solid black;
     border-left:2px solid black;
 }
-#index-spoken-title {
+#spoken-title {
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
@@ -136,14 +136,14 @@ text-align: right;
     border-top:1px solid black;
     border-right:1px solid black;
 }
-#index-spoken-interpretations {
+#spoken-interpretations {
 
 background: linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/simultaneous.jpg") no-repeat;
     background-size: auto 130%;
 border-bottom:2px solid black;
     border-left:2px solid black;
 }
-#index-quality-title {
+#quality-title {
     top: 0;
     right: 0;
     background: linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
@@ -152,13 +152,13 @@ border-bottom:2px solid black;
     border-left:1px solid black;
 
 }
-#index-quality-assurance {
+#quality-assurance {
 
 background: linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/quality.jpg") no-repeat;
     background-size: auto 130%;
 border-top:2px solid black;
 }
-#index-written-title {
+#written-title {
     bottom: 0;
     right: 0;
     background: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255));
@@ -166,14 +166,14 @@ border-top:2px solid black;
     border-top:1px solid black;
     border-left:1px solid black;
 }
-#index-written-translations {
+#written-translations {
 
 background: linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url("../images/document.jpg") no-repeat;
     background-size: auto 130%;
 
 border-bottom:2px solid black;
 }
-.index-services-image {
+.services-image {
     position:absolute;
     top:0;
     left:0;
@@ -423,15 +423,15 @@ margin-bottom:10px;
         height:70%;
     }
 
-        #index-services {
+        #services {
     grid-template-columns: auto;
 }
 
 
-.index-services-title {
+.services-title {
     font-size:1em;
 }
-    #index-written-translations, #index-spoken-interpretations, #index-language-classes, #index-quality-assurance {
+    #written-translations, #spoken-interpretations, #language-classes, #quality-assurance {
         background-size: cover;
         background-position:center;
     }

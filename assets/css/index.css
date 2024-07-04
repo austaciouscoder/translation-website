@@ -1,4 +1,4 @@
-#services {
+#services, #regions {
     display:grid;
     grid-template-columns: 50% 50%;
     position:relative;
@@ -6,13 +6,14 @@
 
 
 }
-.services {
+.services, .regions {
     height:100%;
     display:block;
     position:relative;
     z-index:0;
     cursor:pointer;
 }
+
 #written-translations, #quality-assurance {
     text-align: right;
 
@@ -20,7 +21,7 @@
 #language-classes, #spoken-interpretations {
     text-align: left;
 }
-.services-title {
+.services-title, .regions-title {
     position:absolute;
     font-size:2em;
     font-weight:bold;
@@ -142,13 +143,17 @@ height:calc(100% + 5px);
     #services {
         grid-template-columns: auto;
     }
+    #regions {
+        grid-template-columns: auto;
+    }
     .services-categories {
         grid-template-columns: auto;
     }
 
-    .services-title {
+    .services-title, .regions-title {
         font-size:1em;
     }
+
     #written-translations, #spoken-interpretations, #language-classes, #quality-assurance {
         background-size: cover;
         background-position:center;

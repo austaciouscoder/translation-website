@@ -250,8 +250,8 @@
                 </div>
                 <div class="navbar-locations-section">
                     <h4 href="locations/others/index.html">Others</h4>
-                    <div class="navbar-locations-subsection"><a href="locations/others/capetown/index.html">Cape Town</a>
-                        <a href="locations/others/delhi/index.html">Delhi</a>
+                    <div class="navbar-locations-subsection"><a href="locations/others/delhi/index.html">Delhi</a>
+                        <a href="locations/others/sydney/index.html">Sydney</a>
                         <a href="locations/others/saopaulo/index.html">Sao Paulo</a>
                         <a href="locations/others/cairo/index.html">Cairo</a>
                     </div>
@@ -340,21 +340,21 @@
             <h2>Services</h2>
         </div>
         <hr>
-        <div id="index-services">
+        <div id="services">
 
-            <a href="services/translations/index.html" id="index-written-translations" class="index-services">
-                <div id="index-written-title" class="index-services-title">Written Translations</div>
+            <a href="services/translations/index.html" id="written-translations" class="services">
+                <div id="written-title" class="services-title">Written Translations</div>
             </a>
-            <a href="services/interpretations/index.html" id="index-spoken-interpretations" class="index-services">
-                <div id="index-spoken-title" class="index-services-title">Spoken Interpretations</div>
-
-            </a>
-            <a href="services/quality/index.html" id="index-quality-assurance" class="index-services">
-                <div id="index-quality-title" class="index-services-title">Quality Assurance</div>
+            <a href="services/interpretations/index.html" id="spoken-interpretations" class="services">
+                <div id="spoken-title" class="services-title">Spoken Interpretations</div>
 
             </a>
-            <a href="services/courses/index.html" id="index-language-classes" class="index-services">
-                <div id="index-classes-title" class="index-services-title">Language Classes</div>
+            <a href="services/quality/index.html" id="quality-assurance" class="services">
+                <div id="quality-title" class="services-title">Quality Assurance</div>
+
+            </a>
+            <a href="services/courses/index.html" id="language-classes" class="services">
+                <div id="classes-title" class="services-title">Language Classes</div>
 
             </a>
         </div>
@@ -555,270 +555,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-        if(vw > 1024) {
-            desktopJS();
-        } else {
-            mobileJS();
-        }
-
-        var onresize = function() {
-            //your code here
-            //this is just an example
-            let newWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-
-            if(newWidth > 1024 && vw < 1024 || newWidth < 1024 && vw > 1024) {
-                document.location.reload();
-
-            }
-        }
-        window.addEventListener("resize", onresize);
-
-        function mobileJS() {
-
-// NAVBAR CODE START
-            var menuopen = document.getElementById("navbar-menu-open");
-            var menuclose = document.getElementById("navbar-menu-close");
-            var quote = document.getElementById("navbar-quote");
-            var language = document.getElementById("navbar-languages-mobile");
-            var navbarcontainer = document.getElementById("navbar-container");
-
-            var nav = document.getElementsByClassName("navbar");
-            let navbarcontent = document.getElementById("navbar-content")
-            navbarcontent.style.display = "none";
-            menuopen.addEventListener("click", function () {
-                document.getElementById("navbar").style.display = "block";
-                document.getElementById("site-header").style.height = "100vh";
-                quote.style.display = "block";
-                language.style.display = "block";
-                navbarcontainer.style.display = "grid";
-                menuclose.style.display = "block";
-                menuopen.style.display = "none";
-
-
-            })
-            menuclose.addEventListener("click", function () {
-                document.getElementById("navbar").style.display = "block";
-                document.getElementById("site-header").style.height = "auto";
-                quote.style.display = "none";
-                language.style.display = "none";
-                navbarcontainer.style.display = "none";
-                menuclose.style.display = "none";
-                menuopen.style.display = "block";
-
-            })
-            var sectionsclose = document.getElementById("navbar-sections-close");
-            // CHECK IF MOUSE LEAVES NAVBARCONTENT, IF SO RESET NAVBAR
-            sectionsclose.addEventListener("click", function () {
-                resetNav();
-
-            })
-
-                document.getElementById("navbar-languages-mobile").addEventListener("click", function () {
-
-
-                    resetNav()
-                    quote.style.display = "none";
-                    language.style.display = "none";
-                    navbarcontainer.style.display = "none";
-                    navbarcontent.style.display = "inline-block";
-                    document.getElementById("site-header").style.height = "auto";
-                    menuclose.style.display = "none";
-                    sectionsclose.style.display = "block";
-                    let show = document.getElementById(this.id + "-content");
-                    show.style.display = "grid";
-
-                })
-
-
-// CHANGE NAVBAR CONTENT
-            for (j = 0; j < nav.length; j++) {
-                nav[j].addEventListener("click", function (e) {
-
-                    e.preventDefault();
-                    resetNav()
-                    quote.style.display = "none";
-                    language.style.display = "none";
-                    navbarcontainer.style.display = "none";
-                    navbarcontent.style.display = "inline-block";
-                    document.getElementById("site-header").style.height = "auto";
-                    menuclose.style.display = "none";
-                    sectionsclose.style.display = "block";
-                    let show = document.getElementById(this.id + "-content");
-                    show.style.display = "grid";
-                    this.style.borderBottom = "2px solid black";
-
-                })
-
-            }
-
-            // RESET TO ORIGINAL STATE
-            function resetNav() {
-                navbarcontent.style.display = "none";
-                navbarcontainer.style.display = "grid";
-                menuclose.style.display = "block";
-                sectionsclose.style.display = "none";
-                quote.style.display = "block";
-                language.style.display = "block";
-                document.getElementById("navbar-languages-mobile-content").style.display = "none";
-                document.getElementById("site-header").style.height = "100vh";
-
-                for (x = 0; x < nav.length; x++) {
-                    let others = nav[x].id + "-content";
-                    document.getElementById(others).style.display = "none";
-                    nav[x].style.borderBottom = "none";
-                }
-            }
-            // ACCORDIAN START
-
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-// ACCORDIAN END
-
-        }
-        function desktopJS() {
-            // SERVICES CODE START
-            var services = document.getElementsByClassName("index-services");
-            document.getElementById("index-services").addEventListener("mouseout", function () {
-                resetServices()
-            })
-            for (j = 0; j < services.length; j++) {
-
-                services[j].addEventListener("mouseover", function () {
-                    resetServices();
-
-                    if (this.id === "index-written-translations") {
-                        this.style.background = "url(\"assets/images/document.jpg\") no-repeat";
-                    } else if (this.id === "index-quality-assurance") {
-                        this.style.background = "url(\"assets/images/quality.jpg\") no-repeat";
-
-                    } else if (this.id === "index-spoken-interpretations") {
-                        this.style.background = "url(\"assets/images/simultaneous.jpg\") no-repeat";
-
-                    } else if (this.id === "index-language-classes") {
-                        this.style.background = "url(\"assets/images/classes.jpg\") no-repeat";
-
-                    }
-                    this.firstElementChild.style.background = "rgba(255,255,255,.7)";
-                    this.style.backgroundSize = "auto 130%";
-
-
-                })
-
-            }
-
-            function resetServices() {
-                document.getElementById("index-language-classes").style.background = "linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"assets/images/classes.jpg\") no-repeat";
-                document.getElementById("index-language-classes").style.backgroundSize = "auto 130%";
-                document.getElementById("index-language-classes").firstElementChild.style.background = "linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
-                document.getElementById("index-spoken-interpretations").style.background = "linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"assets/images/simultaneous.jpg\") no-repeat";
-                document.getElementById("index-spoken-interpretations").style.backgroundSize = "auto 130%";
-                document.getElementById("index-spoken-interpretations").firstElementChild.style.background = "linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
-
-                document.getElementById("index-quality-assurance").style.background = "linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"assets/images/quality.jpg\") no-repeat";
-                document.getElementById("index-quality-assurance").style.backgroundSize = "auto 130%";
-                document.getElementById("index-quality-assurance").firstElementChild.style.background = "linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
-
-                document.getElementById("index-written-translations").style.background = " linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"assets/images/document.jpg\") no-repeat";
-                document.getElementById("index-written-translations").style.backgroundSize = "auto 130%";
-                document.getElementById("index-written-translations").firstElementChild.style.background = "linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
-
-
-            }
-
-            // SERVICES CODE END
-// NAVBAR CODE START
-            var nav = document.getElementsByClassName("navbar");
-            let navbarcontent = document.getElementById("navbar-content")
-            navbarcontent.style.display = "none";
-
-            var j;
-            // CHECK IF MOUSE LEAVES NAVBARCONTENT, IF SO RESET NAVBAR
-            navbarcontent.addEventListener("mouseleave", function () {
-                resetNav();
-
-            })
-            document.getElementById("navbar-logo").addEventListener("mouseover", function () {
-                resetNav();
-
-            })
-            document.getElementById("navbar-quote").addEventListener("mouseover", function () {
-                resetNav();
-            })
-
-
-// CHANGE NAVBAR CONTENT
-            for (j = 0; j < nav.length; j++) {
-                nav[j].addEventListener("mouseover", function () {
-
-
-                    resetNav()
-                    navbarcontent.style.display = "inline-block";
-
-                    let show = document.getElementById(this.id + "-content");
-                    show.style.display = "grid";
-                    this.style.borderBottom = "2px solid black";
-
-                })
-
-            }
-
-            // RESET TO ORIGINAL STATE
-            function resetNav() {
-                navbarcontent.style.display = "none";
-
-                for (x = 0; x < nav.length; x++) {
-                    let others = nav[x].id + "-content";
-                    document.getElementById(others).style.display = "none";
-                    nav[x].style.borderBottom = "none";
-                }
-            }
-
-// NAVBAR TRANSPARENT CODE
-            document.addEventListener("scroll", (e) => {
-                if (window.scrollY !== 0) {
-                    document.getElementById("site-header").style.backgroundColor = "white";
-                    document.getElementById("site-header").style.borderBottom = "1px solid black";
-
-                } else {
-                    document.getElementById("site-header").style.backgroundColor = "rgba(255,255,255,0)";
-                    document.getElementById("site-header").style.borderBottom = "none";
-
-                }
-            })
-            //         NAVBAR CODE END
-
-// FAQ CODE START
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-        }
-// FAQ CODE END
-
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
