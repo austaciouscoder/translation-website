@@ -734,7 +734,7 @@ var simplemaps_worldmap_mapdata={
     "4": {
       lat: 22.557,
       lng: 114.119,
-      name: "Shenzhen"
+      name: "Hong Kong"
     },
     "5": {
       lat: 1.291,
@@ -794,7 +794,7 @@ var simplemaps_worldmap_mapdata={
     "16": {
       lat: 22.894,
       lng: -109.926,
-      name: "Cabo San Lucas"
+      name: "Monterrey"
     },
     "17": {
       lat: 41.884,
