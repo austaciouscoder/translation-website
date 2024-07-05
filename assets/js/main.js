@@ -211,15 +211,15 @@
                     resetRegions();
 
                     if (this.id === "written-translations") {
-                        this.style.background = "url(\"../assets/images/na.jpg\") no-repeat";
+                        this.style.background = "url(\"../assets/images/locations/scenery/na.jpg\") no-repeat";
                     } else if (this.id === "quality-assurance") {
-                        this.style.background = "url(\"../assets/images/as.jpg\") no-repeat";
+                        this.style.background = "url(\"../assets/images/locations/scenery/as.jpg\") no-repeat";
 
                     } else if (this.id === "spoken-interpretations") {
-                        this.style.background = "url(\"../assets/images/eu.jpg\") no-repeat";
+                        this.style.background = "url(\"../assets/images/locations/scenery/eu.jpg\") no-repeat";
 
                     } else if (this.id === "language-classes") {
-                        this.style.background = "url(\"../assets/images/other.jpg\") no-repeat";
+                        this.style.background = "url(\"../assets/images/locations/scenery/other.jpg\") no-repeat";
 
                     }
                     this.firstElementChild.style.background = "rgba(255,255,255,.7)";
@@ -231,18 +231,18 @@
             }
 
             function resetRegions() {
-                document.getElementById("language-classes").style.background = "linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/other.jpg\") no-repeat";
+                document.getElementById("language-classes").style.background = "linear-gradient(to top left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/locations/scenery/other.jpg\") no-repeat";
                 document.getElementById("language-classes").style.backgroundSize = "auto 130%";
                 document.getElementById("language-classes").firstElementChild.style.background = "linear-gradient(to top left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
-                document.getElementById("spoken-interpretations").style.background = "linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/eu.jpg\") no-repeat";
+                document.getElementById("spoken-interpretations").style.background = "linear-gradient(to bottom left, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/locations/scenery/eu.jpg\") no-repeat";
                 document.getElementById("spoken-interpretations").style.backgroundSize = "auto 130%";
                 document.getElementById("spoken-interpretations").firstElementChild.style.background = "linear-gradient(to bottom left, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
 
-                document.getElementById("quality-assurance").style.background = "linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/as.jpg\") no-repeat";
+                document.getElementById("quality-assurance").style.background = "linear-gradient(to top right,rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/locations/scenery/as.jpg\") no-repeat";
                 document.getElementById("quality-assurance").style.backgroundSize = "auto 130%";
                 document.getElementById("quality-assurance").firstElementChild.style.background = "linear-gradient(to top right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
 
-                document.getElementById("written-translations").style.background = " linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/na.jpg\") no-repeat";
+                document.getElementById("written-translations").style.background = " linear-gradient(to bottom right, rgba(255,255,255,.2), rgba(255,255,255,.2), rgba(255,255,255,.5), rgb(255, 255, 255)), url(\"../../assets/images/locations/scenery/na.jpg\") no-repeat";
                 document.getElementById("written-translations").style.backgroundSize = "auto 130%";
                 document.getElementById("written-translations").firstElementChild.style.background = "linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.5), rgb(255, 255, 255),rgb(255, 255, 255))"
 
