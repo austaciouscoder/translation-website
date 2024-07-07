@@ -304,6 +304,28 @@
 </div>
 <hr>
 <div id="site-content">
+    <?php
+            $errorcode = $_GET['error'];
+            if($errorcode == "nofiles") {
+            $message = "Files could not be attached. Try emailing us at info@certifiedchinesetranslation.com. Thanks!";
+            } elseif ($errorcode == "size") {
+            $message = "File size too large! Maximum is 20MB. You have submitted file(s) that take up " . $_GET['size'] . ".";
+
+            } elseif ($errorcode == "bot") {
+                        $message = "Captcha thinks you're a bot. Try emailing us at info@certifiedchinesetranslation.com instead. Thanks!";
+
+            } elseif($errorcode == "failed") {
+                        $message = "Something went wrong. Try emailing us at info@certifiedchinesetranslation.com. Thanks!";
+
+            } elseif($errorcode == "none") {
+            $message = "All good! We will get back to you as soon as possible! If the inquiry is urgent, please call us at <a href='tel:626-282-9186'>(626) 282-9186</a>.";
+            } elseif($errorcode == "") {
+            $message = "";
+    }       else {
+            $message = "Something went wrong. Try emailing us at info@certifiedchinesetranslation.com. Thanks!";
+            }
+    ?>
+    <p><?php echo $message; ?></p>
 
 
     <div class="information">
@@ -367,10 +389,10 @@
         </div>
         <div id="contact-form">
             <h2>Inquiry Form</h2><br><br>
-            <input type="email" name="email" id="email" placeholder="Email*"><br><br>
+            <form action="/assets/php/contact.php" id="contactform" method="post"><input type="email" name="email" id="email" placeholder="Email*"><br><br>
             <input type="text" name="subject" id="subject" placeholder="Subject*"><br><br>
             <textarea id="message" name="message" placeholder="Message*"></textarea><br><br>
-            <input type="submit" name="submit" id="submit"><br>
+            <input type="submit" name="submit" id="submit"></form><br>
             <p>Have a translation project in mind? <a href="quote.html">Request a quote</a> today!</p>
         </div>
     </div>

@@ -476,7 +476,7 @@
         <hr>
         <div id="index-faqs">
             <div id="index-faqs-content">
-                <button class="accordion index-faqs-question">What can Abacus Translation translate?</button>
+                <button class="index-accordion index-faqs-question">What can Abacus Translation translate?</button>
                 <div class="panel">
                     <div class="index-faqs-answer">Anything that can be translated.<br> <br>Specialized translations such as certified document translations, certified court interpretations, and patent translations.
                         <br> Regular translations such as simultaneous interpretations, consecutive interpretations, and regular document translations.
@@ -484,7 +484,7 @@
                     </div>
                 </div>
 
-                <button class="accordion index-faqs-question">Why pick Abacus? What makes Abacus different from other translation companies?
+                <button class="index-accordion index-faqs-question">Why pick Abacus? What makes Abacus different from other translation companies?
                 </button>
                 <div class="panel">
                     <div class="index-faqs-answer">The quality. <br><br>Most major translation companies use machine learning and AI in order to speed up the process.
@@ -494,11 +494,11 @@
                         We do not use artificial intelligence (AI) or machine learning (ML) in the entirety of our translation process. Instead, we handpick human translators who are experts in their field or location.</div>
                 </div>
 
-                <button class="accordion index-faqs-question">Why doesn’t Abacus Translation Services use AI?</button>
+                <button class="index-accordion index-faqs-question">Why doesn’t Abacus Translation Services use AI?</button>
                 <div class="panel">
                     <div class="index-faqs-answer">Because of quality and privacy concerns. <br><br>Read our view on AI <a href="#">here</a>.</div>
                 </div>
-                <button class="accordion index-faqs-question">What are the rates?</button>
+                <button class="index-accordion index-faqs-question">What are the rates?</button>
                 <div class="panel">
                     <div class="index-faqs-answer">View our rates <a href="#">here</a>.<br><br>
 <br>
@@ -508,7 +508,7 @@
                         <br><br>
                         Guaranteed.</div>
                 </div>
-                <button class="accordion index-faqs-question">Who has Abacus interpreted for?</button>
+                <button class="index-accordion index-faqs-question">Who has Abacus interpreted for?</button>
                 <div class="panel">
                     <div class="index-faqs-answer">We’ve interpreted for most of the Fortune 500, personally for numerous high profile clients (billionaires, actors, lawyers, artists, etc.), court cases, the federal government (CIA, FBI, Secret Service, Federal Reserve), and many more.
                         <br><br>
@@ -516,7 +516,7 @@
 
                     </div>
                 </div>
-                <button class="accordion index-faqs-question">How can Abacus uphold their high quality standards?</button>
+                <button class="index-accordion index-faqs-question">How can Abacus uphold their high quality standards?</button>
                 <div class="panel">
                     <div class="index-faqs-answer">As a founder-owned translation agency, we will never prioritize profits to the detriment of quality.
                         <br>
@@ -549,10 +549,10 @@
             </div>
             <div id="index-contact-form">
                 <h2>Inquiry Form</h2><br><br>
-                <input type="email" name="email" id="email" placeholder="Email*"><br><br>
-                <input type="text" name="subject" id="subject" placeholder="Subject*"><br><br>
-                <textarea id="message" name="message" placeholder="Message*"></textarea><br><br>
-                <input type="submit" name="submit" id="submit"><br>
+                <form action="assets/php/contact.php" method="POST"><input type="email" name="email" id="email" placeholder="Email*"><br><br>
+                    <input type="text" name="subject" id="subject" placeholder="Subject*"><br><br>
+                    <textarea id="message" name="message" placeholder="Message*"></textarea><br><br>
+                    <input type="submit" name="submit" id="submit"></form><br>
                 <p>Have a translation project in mind? <a href="company/quote.html">Request a quote</a> today!</p>
             </div>
         </div>

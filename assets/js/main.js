@@ -1,22 +1,38 @@
     // ACCORDIAN START
+    // for profiles
     var acc = document.getElementsByClassName("accordion");
     var i;
 
     for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.height) {
-            panel.style.height = null;
-            panel.nextElementSibling.style.display = "grid";
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.height) {
+                panel.style.height = null;
+                panel.nextElementSibling.style.display = "grid";
 
-        } else {
-            panel.style.height = "calc(100% - 60px)";
-            panel.nextElementSibling.style.display = "none";
+            } else {
+                panel.style.height = "calc(100% - 60px)";
+                panel.nextElementSibling.style.display = "none";
 
-        }
-    });
-}
+            }
+        });
+    }
+    // for index page only
+    let acc1 = document.getElementsByClassName("index-accordion");
+    var i;
+
+    for (i = 0; i < acc1.length; i++) {
+        acc1[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
     // ACCORDIAN END
     function findPosition(obj) {
     var currenttop = 0;
@@ -376,19 +392,7 @@
             })
 
         }
-        var acc = document.getElementsByClassName("accordion");
-        var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
+
 
     }

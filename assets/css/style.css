@@ -247,7 +247,7 @@ margin: 5% 15%;
 /* START FAQS SECTION */
 
 /* START W3SCHOOLS ACCORDIAN */
-.accordion {
+.index-accordion {
     background-color: white;
     color: black;
     cursor: pointer;
@@ -261,11 +261,11 @@ margin: 5% 15%;
     transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active, .index-accordion:hover {
     background-color: orange;
 }
 
-.accordion:after {
+.index-accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;

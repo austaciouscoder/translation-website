@@ -63,18 +63,19 @@ if ($filesize < 20*1024*1024) {
     if ($notabot) {
         if ($email->Send()) {
 
-            header("Location: contact.php?ticket=" . $random);
+            header("Location: contact.php?error=none&ticket=" . $random);
 
 
         } else {
-            echo "Message could not be sent. Mailer Error: {$email->ErrorInfo}";
+        header("Location: contact.php?error=failed");
         }
     } else {
-        echo "not success";
-        $error =  $googleobj->{'error-codes'};
-        echo var_dump($error);
+            $error =  $googleobj->{'error-codes'};
+
+               header("Location: contact.php?error=bot&errorcode=".$error);
+
     }
 } else {
-    header("Location: contact.php?error=size");
+    header("Location: contact.php?error=size&size=" . $filesize);
 
 }
