@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 $notabot = false;
-$yoursecret = "6LegT1kpAAAAALc1Pzq2vMqgUvqE1FqfpcDRbzwU";
+$yoursecret = "XYZ";
 
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . $yoursecret . "&response=" . $_POST['g-recaptcha-response'] . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
 $googleobj = json_decode($response);
